@@ -1,21 +1,21 @@
-# Generated with JReleaser 1.4.0 at 2022-12-30T18:04:24.421537162Z
+# Generated with JReleaser 1.4.0 at 2022-12-30T20:43:20.78762154Z
 class KtCliApp < Formula
   desc "Kotlin CLI app"
   homepage "https://github.com/namuan/kt-cli-app"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/namuan/kt-cli-app/releases/download/v0.1.1/kt-cli-app-0.1.1-linux-x86_64.zip"
-    sha256 "777bfc8c8c2f95c405c2f5c1beeec582a2d7e0cf6a3d47f4b6145b2271d40365"
+    url "https://github.com/namuan/kt-cli-app/releases/download/v0.1.2/kt-cli-app-0.1.2-linux-x86_64.zip"
+    sha256 "41a481bc4ee286df975fcb6eee4070ad3f349db9aa41a6c957d6a5e1aeda6b5f"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/namuan/kt-cli-app/releases/download/v0.1.1/kt-cli-app-0.1.1-osx-x86_64.zip"
-    sha256 "101ef0c665664466cc9fc45dac8089b70987644c8273ec3af30866a830a95ffc"
+    url "https://github.com/namuan/kt-cli-app/releases/download/v0.1.2/kt-cli-app-0.1.2-osx-x86_64.zip"
+    sha256 "fa4c0fb796043d8d380778f394d70672454a00f9af9d75c206a706fba44f8718"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/namuan/kt-cli-app/releases/download/v0.1.1/kt-cli-app-0.1.1-osx-x86_64.zip"
-    sha256 "101ef0c665664466cc9fc45dac8089b70987644c8273ec3af30866a830a95ffc"
+    url "https://github.com/namuan/kt-cli-app/releases/download/v0.1.2/kt-cli-app-0.1.2-osx-x86_64.zip"
+    sha256 "fa4c0fb796043d8d380778f394d70672454a00f9af9d75c206a706fba44f8718"
   end
 
 
@@ -26,6 +26,6 @@ class KtCliApp < Formula
 
   test do
     output = shell_output("#{bin}/kt-cli-app --version")
-    assert_match "0.1.1", output
+    assert_match "0.1.2", output
   end
 end
